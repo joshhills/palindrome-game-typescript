@@ -10,4 +10,4 @@ The challenge was to add a couple of methods to meet the specification, not use 
 
 This still does the same thing, however I've updated the project to incorporate TypeScript and ES6 imports - this makes it easier to make things domain-driven, as I can now declare interfaces that allow for clearer separation-of-concerns.
 
-Additionally, I've separated Express's routing into a more extensible folder structure, and add E2E tests using [Chai](https://www.chaijs.com/).
+Additionally, I've separated Express's routing into a more extensible folder structure, and added E2E tests using [Chai](https://www.chaijs.com/).

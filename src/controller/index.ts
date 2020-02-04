@@ -1,0 +1,1 @@
+export { getScores, submitEntry } from './public';

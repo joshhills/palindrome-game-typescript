@@ -1,13 +1,23 @@
-import express from 'express';
-import { PORT } from './config/constants';
+import express from "express";
+import { ApplicationConfig } from './config';
+import route from './route';
+import path from "path";
+
+/**
+ * Hello! I've create a more sophisticated framework for development
+ * around this idea of a palindrome game that demonstrates some
+ * domain-driven design.
+ * 
+ * @author Josh Hills
+ */
 
 const app = express();
-app.use(express.json());
 
-app.get('/hello', (req, res) => {
-    res.send('Hello world!');
-});
+// Bootstrap app with middleware
+app.use(express.static(path.join(__dirname, 'static')), express.json(), route);
 
-app.listen(3000, () => {
-    console.log('Server listening...');
-});
+// Begin server
+app.listen(ApplicationConfig.PORT);
+
+// Expose to tests
+export default app;

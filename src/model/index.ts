@@ -1,0 +1,1 @@
+export { HiscoreEntry } from './hiscore-entry';

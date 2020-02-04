@@ -1,1 +1,1 @@
-export { ApplicationConfig } from "./application";
+export { ApplicationConfig } from './application';

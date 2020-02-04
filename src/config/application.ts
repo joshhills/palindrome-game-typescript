@@ -1,6 +1,6 @@
 /**
  * Generic application configuration.
- * Could use .dotenv to externalise aspects of it.
+ * Could use dotenv to externalise aspects of it.
  */
 export class ApplicationConfig {
     // The port to run the web-server on.

@@ -2,6 +2,7 @@
   "name": "palindrome-game",
   "version": "1.0.0",
   "description": "A simple palindrome game with hiscores using Node.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "mocha -r ts-node/register test/**/*.test.ts",
